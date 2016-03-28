@@ -127,7 +127,7 @@ h4 {
 }
 
 .container {
-    width: 978px;
+    max-width: 978px;
     margin: 0 auto;
     /*height: 100vh;*/
     /*background: red;*/
@@ -136,36 +136,24 @@ h4 {
 /* GRID */
 
 .grid-3 {
-    overflow: hidden;
+    display: flex;
+    justify-content; space-between;
 }
 
 .grid-3 .col {
-    margin-right: 30px;
-    width: 306px; /* base width / 3 */
-    
+    width: 32%; /* base width / 3 */
     background: white;
-    float: left;
 }
 
-.grid-3 .col:last-of-type {
-    margin-right: 0px;
-}
-
-.grid-4 {
-    overflow: hidden;
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .grid-4 .col {
     margin-right: 30px;
-    width: 222px; /* base width / 4 */
-    float: left;
+    width: 20%; /* base width / 4 */
 }
-
-.grid-4 .col:last-of-type {
-    margin-right: 0px;
-
-}
-
 
 /* END GRID */
 
@@ -321,37 +309,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#429cd4', end
 .sponsor-stroke {
     height: 75px;
     background: rgb(234,234,234);
-    
     border-bottom: 2px solid rgb(195,195,195);
 }
 
 .sponsor-list {
     margin: 0;
     padding: 0;
-    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .sponsor {
-    margin-right: 148px;
     line-height: 70px;
     list-style: none;
-    display: inline-block;
     opacity: 0.4;
-}
-
-.sponsor:last-of-type {
-    margin-right: 0px;
-}
-
-.sponsor img {
-    text-align: center;
-    display: inline-block;
 }
 
 .services {
     background: white;
 }
-
 
 .service {
     padding: 93px 0px;
@@ -367,7 +344,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#429cd4', end
     margin-top: 30px;
 }
 
-
+/*PROJECTS*/
 
 .projects {
     background: white;
@@ -380,11 +357,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#429cd4', end
 
 .project {
     background: white;
-    
 }
 
 .project img {
-    display: block;
     padding: 2px;
     border: 1px solid #ededed;
 
@@ -521,6 +496,39 @@ footer p {
     height: 25px;
     width: 25px;
 
+}
+
+@media screen and (max-width: 1200px) {
+    .slide-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-slide-left {
+        position: static;
+        margin: 30px 70px 0 0;
+    }
+
+    .btn-slide-right {
+        position: static;
+        margin: 30px 0 0 70px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .img-phone {
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner-caption {
+        float: none;
+        width: 80%;
+    }
 }
 
 /* ==========================================================================
