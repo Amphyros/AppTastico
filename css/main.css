@@ -350,7 +350,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a454d', end
 
 .blog-item {
     margin: 20px 0;
-    align-items: center;
 }
 
 .img-container {
@@ -487,7 +486,7 @@ footer p {
 
     /*service column*/
     .service {
-        padding: 45px;
+        padding: 45px 0;
     }
 
     .service-items {
@@ -550,6 +549,7 @@ footer p {
     .main-nav ul {
         flex-direction: column;
         text-align: center;
+        margin-left: 30px;
     }
 
     .main-nav li {
@@ -566,13 +566,6 @@ footer p {
     }
 
     /*slider size fix*/
-    .project-items {
-        justify-content: space-around;
-    }
-
-    .project-item:last-child {
-        display: none;
-    }
 
     .btn-slide-left {
         width: 7%;
@@ -582,13 +575,18 @@ footer p {
         width: 7%;
     }
 
-    /*blog image*/
-    .blog-item .img-container {
-        display: none;
+    /*Font size changes*/
+
+    .banner-content h2 {
+        font-size: 2rem;
     }
 
-    .post-text {
-        width: 100%;
+    .banner-content p {
+        font-size: 0.875rem;
+    }
+
+    .service-item p {
+        font-size: 0.875rem;
     }
 }
 
@@ -600,6 +598,16 @@ footer p {
 
     footer .container p {
         margin-bottom: 10px;
+    }
+
+    /*slider size fix*/
+
+    .btn-slide-left {
+        width: 8%;
+    }
+
+    .btn-slide-right {
+        width: 8%;
     }
 }
 
